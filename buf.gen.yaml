@@ -14,14 +14,6 @@ plugins:
   - plugin: buf.build/protocolbuffers/ruby
     out: rubygem/lib/wikipaddle_api
 
-  - plugin: buf.build/protocolbuffers/go
-    out: golang
-    opt: paths=source_relative
-
-  - plugin: buf.build/bufbuild/connect-go
-    out: golang
-    opt: paths=source_relative
-
   - plugin: protoc-gen-twirp_ts
     path: ./node_modules/.bin/protoc-gen-twirp_ts
     out: gen/typescript
