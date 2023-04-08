@@ -2,10 +2,10 @@
 require 'twirp'
 require_relative 'wikipaddle_pb.rb'
 
-module WikiPaddleApi
+module WikipaddleApi
   module V1
     class MobileService < ::Twirp::Service
-      package 'wikipaddle.api.v1'
+      package 'wikipaddle_api.v1'
       service 'Mobile'
       rpc :GetUser, UserRequest, UserResponse, :ruby_method => :get_user
       rpc :GetGuide, GuideRequest, GuideResponse, :ruby_method => :get_guide

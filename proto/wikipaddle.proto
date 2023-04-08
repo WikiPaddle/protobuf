@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package wikipaddle.api.v1;
+package wikipaddle_api.v1;
 
 option ruby_package = "WikiPaddleApi::V1";
 

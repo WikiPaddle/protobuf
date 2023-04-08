@@ -2,15 +2,7 @@
 # yarn lockfile v1
 
 
-"@protobuf-ts/plugin-framework@^2.0.7":
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/@protobuf-ts/plugin-framework/-/plugin-framework-2.8.2.tgz#8699938576f68d01a9a937aa383db8fdcef6f64d"
-  integrity sha512-ivcJdNVB3Iee8044f8erZGBgmB6ZfQbbKyxRgDBXRVKYxsruLr432WcT5upw9autK9OnlSVLaebi8kDneFXd2g==
-  dependencies:
-    "@protobuf-ts/runtime" "^2.8.2"
-    typescript "^3.9"
-
-"@protobuf-ts/plugin-framework@^2.8.3":
+"@protobuf-ts/plugin-framework@^2.0.7", "@protobuf-ts/plugin-framework@^2.8.3":
   version "2.8.3"
   resolved "https://registry.yarnpkg.com/@protobuf-ts/plugin-framework/-/plugin-framework-2.8.3.tgz#cde142fb402d5e1cc66582bc1eedcc6701745a06"
   integrity sha512-VfQP5Cfipaf7XASz+VRdKshN8EuDDvbfp+c5RTS6c3utUn6KhylDQWKSR/J1+hS5bQ2rHqYTqf6zya8Wn/2o3w==
@@ -40,11 +32,6 @@
   integrity sha512-Tb6nuevgezjGNnT8WF+aveGWeI5xeAbNpySd/nzknKx6ynepXdlNz5cN0xIADeOgDJHo/05Ka+vZ5ZI33tz2Og==
   dependencies:
     "@protobuf-ts/runtime" "^2.8.3"
-
-"@protobuf-ts/runtime@^2.8.2":
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/@protobuf-ts/runtime/-/runtime-2.8.2.tgz#5d5424a6ae7fb846c3f4d0f2dd6448db65bb69d6"
-  integrity sha512-PVxsH81y9kEbHldxxG/8Y3z2mTXWQytRl8zNS0mTPUjkEC+8GUX6gj6LsA8EFp25fAs9V0ruh+aNWmPccEI9MA==
 
 "@protobuf-ts/runtime@^2.8.3":
   version "2.8.3"
@@ -178,9 +165,9 @@ path-to-regexp@^6.2.0:
   integrity sha512-JLyh7xT1kizaEvcaXOQwOc2/Yhw6KZOvPf1S8401UyLk86CU79LN3vl7ztXGm/pZ+YjoyAJ4rxmHwbkBXJX+yw==
 
 prettier@^2.5.1:
-  version "2.8.4"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.4.tgz#34dd2595629bfbb79d344ac4a91ff948694463c3"
-  integrity sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==
+  version "2.8.7"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.7.tgz#bb79fc8729308549d28fe3a98fce73d2c0656450"
+  integrity sha512-yPngTo3aXUUmyuTjeTUT75txrf+aMh9FiD7q9ZE/i6r0bPb22g4FsE6Y338PQX1bmfy08i9QQCB7/rcUAVntfw==
 
 protoc-gen-ts@^0.8.6:
   version "0.8.6"
