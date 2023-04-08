@@ -1,7 +1,12 @@
 name: Publish npm package to GitHub Packages
+
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - main
+    paths:
+      - 'npm/**'
+
 jobs:
   build:
     runs-on: ubuntu-latest
