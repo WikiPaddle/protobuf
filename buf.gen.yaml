@@ -1,0 +1,16 @@
+version: v1
+managed:
+  enabled: true
+  go_package_prefix:
+    default: github.com/wikipaddle/protobuf/go-wikipaddle
+plugins:
+  - plugin: buf.build/protocolbuffers/ruby
+    out: gen/ruby
+  - plugin: buf.build/grpc/ruby
+    out: gen/ruby
+  - plugin: buf.build/protocolbuffers/go
+    out: golang
+    opt: paths=source_relative
+  - plugin: buf.build/bufbuild/connect-go
+    out: golang
+    opt: paths=source_relative
