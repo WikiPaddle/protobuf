@@ -5,6 +5,8 @@ managed:
     default: github.com/wikipaddle/protobuf/go-wikipaddle
 plugins:
   - plugin: protoc-gen-twirp_ruby
+    path: ["go", "run", "github.com/github/twirp-ruby/protoc-gen-twirp_ruby"]
+    opt: twirp_ruby_out=gen/ruby
     out: gen/ruby
   - plugin: buf.build/protocolbuffers/ruby
     out: gen/ruby
