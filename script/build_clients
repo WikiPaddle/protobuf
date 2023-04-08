@@ -1,11 +1,11 @@
 #!/bin/bash
 
 GO_BIN_PATH=$(go env GOPATH)/bin
-MOBILE_TWIRP_PATH="./../mobile/wikipaddle/lib"
+JS_TWIRP_PATH="./npm/"
 PROTOC_GEN_TS_BIN="./node_modules/.bin/protoc-gen-ts"
 PROTOC_GEN_TS_PROTO="./node_modules/.bin/protoc-gen-ts_proto"
 PROTOC_GEN_TWIRP_BIN="./node_modules/.bin/protoc-gen-twirp_ts"
-RUBY_TWIRP_PATH="./vendor/"
+RUBY_TWIRP_PATH="./rubygem/"
 
 PATH="$PATH:$GO_BIN_PATH" protoc --proto_path=. \
   --ruby_out=${RUBY_TWIRP_PATH} \
@@ -15,7 +15,6 @@ PATH="$PATH:$GO_BIN_PATH" protoc --proto_path=. \
   --plugin=protoc-gen-twirp_ts=${PROTOC_GEN_TWIRP_BIN} \
   --ts_opt=client_none \
   --ts_opt=generate_dependencies \
-  --ts_out=${MOBILE_TWIRP_PATH} \
-  --twirp_ts_out=${MOBILE_TWIRP_PATH} \
+  --twirp_ts_out=${JS_TWIRP_PATH} \
   --twirp_ts_opt=client_only \
   ./rpc/wikipaddle.proto

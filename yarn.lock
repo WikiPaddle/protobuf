@@ -2,41 +2,41 @@
 # yarn lockfile v1
 
 
-"@protobuf-ts/plugin-framework@^2.0.7", "@protobuf-ts/plugin-framework@^2.2.3-alpha.1":
-  version "2.8.3"
-  resolved "https://registry.yarnpkg.com/@protobuf-ts/plugin-framework/-/plugin-framework-2.8.3.tgz#cde142fb402d5e1cc66582bc1eedcc6701745a06"
-  integrity sha512-VfQP5Cfipaf7XASz+VRdKshN8EuDDvbfp+c5RTS6c3utUn6KhylDQWKSR/J1+hS5bQ2rHqYTqf6zya8Wn/2o3w==
+"@protobuf-ts/plugin-framework@^2.0.7", "@protobuf-ts/plugin-framework@^2.8.2":
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@protobuf-ts/plugin-framework/-/plugin-framework-2.8.2.tgz#8699938576f68d01a9a937aa383db8fdcef6f64d"
+  integrity sha512-ivcJdNVB3Iee8044f8erZGBgmB6ZfQbbKyxRgDBXRVKYxsruLr432WcT5upw9autK9OnlSVLaebi8kDneFXd2g==
   dependencies:
-    "@protobuf-ts/runtime" "^2.8.3"
+    "@protobuf-ts/runtime" "^2.8.2"
     typescript "^3.9"
 
 "@protobuf-ts/plugin@^2.2.3-alpha.1":
-  version "2.2.3-alpha.1"
-  resolved "https://registry.yarnpkg.com/@protobuf-ts/plugin/-/plugin-2.2.3-alpha.1.tgz#a8c9b7adba31b661abeb36a71bb1bd700b2b053c"
-  integrity sha512-uL09hxNeB3ym9ubeHCOjyJczIhQFhowmMUFD9FFAZrzwnGxYvnetcmILmIQf1mWaoLbWKmlVjS7ju/Xe6G6rKw==
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@protobuf-ts/plugin/-/plugin-2.8.2.tgz#f65f4362721e6a3bb3ce04f6d9760901e576eaa7"
+  integrity sha512-rTPxaeKBfUar8ubKxbVdv4XL6AcGA0OOgHNHFyrfODP7Epy80omwuvgFJex1YpeNFJxm/FZXXj5Z+nHuhYEqJg==
   dependencies:
-    "@protobuf-ts/plugin-framework" "^2.2.3-alpha.1"
-    "@protobuf-ts/protoc" "^2.2.3-alpha.1"
-    "@protobuf-ts/runtime" "^2.2.3-alpha.1"
-    "@protobuf-ts/runtime-rpc" "^2.2.3-alpha.1"
+    "@protobuf-ts/plugin-framework" "^2.8.2"
+    "@protobuf-ts/protoc" "^2.8.2"
+    "@protobuf-ts/runtime" "^2.8.2"
+    "@protobuf-ts/runtime-rpc" "^2.8.2"
     typescript "^3.9"
 
-"@protobuf-ts/protoc@^2.2.3-alpha.1":
-  version "2.8.3"
-  resolved "https://registry.yarnpkg.com/@protobuf-ts/protoc/-/protoc-2.8.3.tgz#5a5ad7ed6a3c473a7759eef01b569fb4bc9bb851"
-  integrity sha512-j5REioDr7KT/cyfBD6k+FNkQFzkqv38PuUw+BsQ0dcIFJqaP8PnilbwtPn6kAJtI5QxFWPkoAr3fsWtjK7k6tQ==
+"@protobuf-ts/protoc@^2.8.2":
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@protobuf-ts/protoc/-/protoc-2.8.2.tgz#45809eda3037caff300b9061262444ae7ad891ec"
+  integrity sha512-1e+rOgp22ElyqRWunSc8bhatJcvRe90AGPceVn67IFYzybvfKl17vP1igHddeYkN0dzOucnOrwqn2v1jnDfE2w==
 
-"@protobuf-ts/runtime-rpc@^2.2.3-alpha.1":
-  version "2.8.3"
-  resolved "https://registry.yarnpkg.com/@protobuf-ts/runtime-rpc/-/runtime-rpc-2.8.3.tgz#1dfef7902529cc43812db6e040dd0f6f363ba6d3"
-  integrity sha512-Tb6nuevgezjGNnT8WF+aveGWeI5xeAbNpySd/nzknKx6ynepXdlNz5cN0xIADeOgDJHo/05Ka+vZ5ZI33tz2Og==
+"@protobuf-ts/runtime-rpc@^2.8.2":
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@protobuf-ts/runtime-rpc/-/runtime-rpc-2.8.2.tgz#8af6d5eab44e2fc92cfe9a83a5c351b5f2fcdfbe"
+  integrity sha512-vum/Y7AXdUTWGFu7dke/jCSB9dV3Oo3iVPcce3j7KudpzzWarDkEGvXjKv3Y8zJPj5waToyxwBNSb7eo5Vw5WA==
   dependencies:
-    "@protobuf-ts/runtime" "^2.8.3"
+    "@protobuf-ts/runtime" "^2.8.2"
 
-"@protobuf-ts/runtime@^2.2.3-alpha.1", "@protobuf-ts/runtime@^2.8.3":
-  version "2.8.3"
-  resolved "https://registry.yarnpkg.com/@protobuf-ts/runtime/-/runtime-2.8.3.tgz#827b87429afddf11b70be39880c9201f5dac2aae"
-  integrity sha512-nVL1s5wWpF6U+wtWTEWfUPD9Ockckj+fHqhzgm41CKV4Oma3D/2M6tzqOQ+wrm4GZu1bt+s6f43feNnar6fhjA==
+"@protobuf-ts/runtime@^2.8.2":
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@protobuf-ts/runtime/-/runtime-2.8.2.tgz#5d5424a6ae7fb846c3f4d0f2dd6448db65bb69d6"
+  integrity sha512-PVxsH81y9kEbHldxxG/8Y3z2mTXWQytRl8zNS0mTPUjkEC+8GUX6gj6LsA8EFp25fAs9V0ruh+aNWmPccEI9MA==
 
 balanced-match@^1.0.0:
   version "1.0.2"
@@ -93,6 +93,11 @@ glob@^7.1.5:
     minimatch "^3.1.1"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
+
+google-protobuf@^3.21.2:
+  version "3.21.2"
+  resolved "https://registry.yarnpkg.com/google-protobuf/-/google-protobuf-3.21.2.tgz#4580a2bea8bbb291ee579d1fefb14d6fa3070ea4"
+  integrity sha512-3MSOYFO5U9mPGikIYCzK0SaThypfGgS6bHqrUGXG3DPHCrb+txNqeEcns1W0lkGfk0rCyNXm7xB9rMxnCiZOoA==
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -160,9 +165,9 @@ path-to-regexp@^6.2.0:
   integrity sha512-JLyh7xT1kizaEvcaXOQwOc2/Yhw6KZOvPf1S8401UyLk86CU79LN3vl7ztXGm/pZ+YjoyAJ4rxmHwbkBXJX+yw==
 
 prettier@^2.5.1:
-  version "2.8.7"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.7.tgz#bb79fc8729308549d28fe3a98fce73d2c0656450"
-  integrity sha512-yPngTo3aXUUmyuTjeTUT75txrf+aMh9FiD7q9ZE/i6r0bPb22g4FsE6Y338PQX1bmfy08i9QQCB7/rcUAVntfw==
+  version "2.8.4"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.4.tgz#34dd2595629bfbb79d344ac4a91ff948694463c3"
+  integrity sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==
 
 protoc-gen-ts@^0.8.6:
   version "0.8.6"
@@ -198,6 +203,11 @@ typescript@^3.9:
   version "3.9.10"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.10.tgz#70f3910ac7a51ed6bef79da7800690b19bf778b8"
   integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
+
+typescript@^5.0.4:
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.0.4.tgz#b217fd20119bd61a94d4011274e0ab369058da3b"
+  integrity sha512-cW9T5W9xY37cc+jfEnaUvX91foxtHkza3Nw3wkoF4sSlKn0MONdkdEndig/qPBWXNkmplh3NzayQzCiHM4/hqw==
 
 wrappy@1:
   version "1.0.2"
