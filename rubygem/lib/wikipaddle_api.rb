@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative "wikipaddle_proto/version"
+require_relative "wikipaddle_api/version"
 
-module WikipaddleProto
+module WikipaddleApi
   class Error < StandardError; end
   # Your code goes here...
 end

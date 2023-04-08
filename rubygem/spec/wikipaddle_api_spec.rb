@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-RSpec.describe WikipaddleProto do
+RSpec.describe WikipaddleApi do
   it "has a version number" do
-    expect(WikipaddleProto::VERSION).not_to be nil
+    expect(WikipaddleApi::VERSION).not_to be nil
   end
 
   it "does something useful" do

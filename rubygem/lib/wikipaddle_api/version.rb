@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-module WikipaddleProto
+module WikipaddleApi
   VERSION = "0.1.0"
 end
