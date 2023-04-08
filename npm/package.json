@@ -11,8 +11,7 @@
     "url": "https://github.com/wikipaddle/protobuf.git"
   },
   "dependencies": {
-    "protobufjs": "^7.2.2",
-    "twirp-ts": "^2.5.0"
+    "protobufjs": "^7.2.2"
   },
   "devDependencies": {
     "prettier": "^2.8.7"
