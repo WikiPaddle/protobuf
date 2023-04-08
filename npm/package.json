@@ -1,5 +1,9 @@
 {
   "name": "wikipaddle-api",
   "version": "1.0.0",
-  "main": "wikipaddle.twirp.ts"
+  "main": "wikipaddle.twirp.ts",
+  "dependencies": {
+    "twirp-ts": "^2.5.0",
+    "protobufjs": "^7.2.2"
+  }
 }

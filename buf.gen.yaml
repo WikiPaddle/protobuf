@@ -14,6 +14,9 @@ plugins:
   - plugin: buf.build/protocolbuffers/ruby
     out: rubygem/lib/wikipaddle_api
 
+  - remote: buf.build/stephenh/plugins/ts-proto
+    out: npm
+
   - plugin: protoc-gen-twirp_ts
     path: ./node_modules/.bin/protoc-gen-twirp_ts
     out: npm
