@@ -1,5 +1,5 @@
 {
   "name": "wikipaddle-api",
   "version": "1.0.0",
-  "main": "rpc/wikipaddle.twirp-client.ts"
+  "main": "wikipaddle.twirp.ts"
 }
