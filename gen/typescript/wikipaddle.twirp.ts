@@ -65,7 +65,7 @@ export class MobileClientJSON implements MobileClient {
       emitDefaultValues: false,
     });
     const promise = this.rpc.request(
-      "wikipaddle.api.v1.Mobile",
+      "wikipaddle_api.v1.Mobile",
       "GetUser",
       "application/json",
       data as object
@@ -81,7 +81,7 @@ export class MobileClientJSON implements MobileClient {
       emitDefaultValues: false,
     });
     const promise = this.rpc.request(
-      "wikipaddle.api.v1.Mobile",
+      "wikipaddle_api.v1.Mobile",
       "GetGuide",
       "application/json",
       data as object
@@ -99,7 +99,7 @@ export class MobileClientJSON implements MobileClient {
       emitDefaultValues: false,
     });
     const promise = this.rpc.request(
-      "wikipaddle.api.v1.Mobile",
+      "wikipaddle_api.v1.Mobile",
       "GetGuidesCollection",
       "application/json",
       data as object
@@ -117,7 +117,7 @@ export class MobileClientJSON implements MobileClient {
       emitDefaultValues: false,
     });
     const promise = this.rpc.request(
-      "wikipaddle.api.v1.Mobile",
+      "wikipaddle_api.v1.Mobile",
       "GetCurrentUser",
       "application/json",
       data as object
@@ -135,7 +135,7 @@ export class MobileClientJSON implements MobileClient {
       emitDefaultValues: false,
     });
     const promise = this.rpc.request(
-      "wikipaddle.api.v1.Mobile",
+      "wikipaddle_api.v1.Mobile",
       "GetGuideCommentsCollection",
       "application/json",
       data as object
@@ -155,7 +155,7 @@ export class MobileClientJSON implements MobileClient {
       emitDefaultValues: false,
     });
     const promise = this.rpc.request(
-      "wikipaddle.api.v1.Mobile",
+      "wikipaddle_api.v1.Mobile",
       "CreateGuideComment",
       "application/json",
       data as object
@@ -180,7 +180,7 @@ export class MobileClientProtobuf implements MobileClient {
   GetUser(request: UserRequest): Promise<UserResponse> {
     const data = UserRequest.toBinary(request);
     const promise = this.rpc.request(
-      "wikipaddle.api.v1.Mobile",
+      "wikipaddle_api.v1.Mobile",
       "GetUser",
       "application/protobuf",
       data
@@ -191,7 +191,7 @@ export class MobileClientProtobuf implements MobileClient {
   GetGuide(request: GuideRequest): Promise<GuideResponse> {
     const data = GuideRequest.toBinary(request);
     const promise = this.rpc.request(
-      "wikipaddle.api.v1.Mobile",
+      "wikipaddle_api.v1.Mobile",
       "GetGuide",
       "application/protobuf",
       data
@@ -204,7 +204,7 @@ export class MobileClientProtobuf implements MobileClient {
   ): Promise<GetGuidesCollectionResponse> {
     const data = GetGuidesCollectionRequest.toBinary(request);
     const promise = this.rpc.request(
-      "wikipaddle.api.v1.Mobile",
+      "wikipaddle_api.v1.Mobile",
       "GetGuidesCollection",
       "application/protobuf",
       data
@@ -217,7 +217,7 @@ export class MobileClientProtobuf implements MobileClient {
   GetCurrentUser(request: GetCurrentUserRequest): Promise<UserResponse> {
     const data = GetCurrentUserRequest.toBinary(request);
     const promise = this.rpc.request(
-      "wikipaddle.api.v1.Mobile",
+      "wikipaddle_api.v1.Mobile",
       "GetCurrentUser",
       "application/protobuf",
       data
@@ -230,7 +230,7 @@ export class MobileClientProtobuf implements MobileClient {
   ): Promise<GetGuideCommentsCollectionResponse> {
     const data = GetGuideCommentsCollectionRequest.toBinary(request);
     const promise = this.rpc.request(
-      "wikipaddle.api.v1.Mobile",
+      "wikipaddle_api.v1.Mobile",
       "GetGuideCommentsCollection",
       "application/protobuf",
       data
@@ -245,7 +245,7 @@ export class MobileClientProtobuf implements MobileClient {
   ): Promise<GuideComment> {
     const data = CreateGuideCommentRequest.toBinary(request);
     const promise = this.rpc.request(
-      "wikipaddle.api.v1.Mobile",
+      "wikipaddle_api.v1.Mobile",
       "CreateGuideComment",
       "application/protobuf",
       data
@@ -299,7 +299,7 @@ export function createMobileServer<T extends TwirpContext = TwirpContext>(
 ) {
   return new TwirpServer<MobileTwirp, T>({
     service,
-    packageName: "wikipaddle.api.v1",
+    packageName: "wikipaddle_api.v1",
     serviceName: "Mobile",
     methodList: MobileMethodList,
     matchRoute: matchMobileRoute,
