@@ -1,7 +1,10 @@
-name: Publish npm package to GitHub Packages
+name: Publish NPM package
 
 on:
   push:
+    paths:
+      - "npm/**"
+      - ".github/workflows/npm.yml"
     branches:
       - main
 
@@ -13,7 +16,7 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v3
-      # Setup .npmrc file to publish to GitHub Packages
+
       - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
