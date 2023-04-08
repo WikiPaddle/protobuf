@@ -2,8 +2,6 @@ syntax = "proto3";
 
 package wikipaddle_api.v1;
 
-option ruby_package = "WikiPaddleApi::V1";
-
 service Mobile {
   rpc GetUser(UserRequest) returns (UserResponse);
   rpc GetGuide(GuideRequest) returns (GuideResponse);
