@@ -7,19 +7,15 @@ plugins:
   - plugin: protoc-gen-twirp_ruby
     path: ["go", "run", "github.com/github/twirp-ruby/protoc-gen-twirp_ruby"]
     opt: twirp_ruby_out=gen/ruby
-    out: gen/ruby
+    out: rubygem/lib/wikipaddle_api
   - plugin: buf.build/protocolbuffers/ruby
-    out: gen/ruby
+    out: rubygem/lib/wikipaddle_api
   - plugin: buf.build/protocolbuffers/go
     out: golang
     opt: paths=source_relative
   - plugin: buf.build/bufbuild/connect-go
     out: golang
     opt: paths=source_relative
-  - plugin: buf.build/community/stephenh-ts-proto
-    out: typescript
-    opt: paths=source_relative
   - plugin: protoc-gen-twirp_ts
     path: ./node_modules/.bin/protoc-gen-twirp_ts
     out: gen/typescript
-
