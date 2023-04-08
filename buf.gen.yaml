@@ -14,3 +14,6 @@ plugins:
   - plugin: buf.build/bufbuild/connect-go
     out: golang
     opt: paths=source_relative
+  - plugin: buf.build/community/stephenh-ts-proto
+    out: typescript
+    opt: paths=source_relative
