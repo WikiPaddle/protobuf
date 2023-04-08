@@ -5,7 +5,7 @@ JS_TWIRP_PATH="./npm/"
 PROTOC_GEN_TS_BIN="./node_modules/.bin/protoc-gen-ts"
 PROTOC_GEN_TS_PROTO="./node_modules/.bin/protoc-gen-ts_proto"
 PROTOC_GEN_TWIRP_BIN="./node_modules/.bin/protoc-gen-twirp_ts"
-RUBY_TWIRP_PATH="./rubygem/"
+RUBY_TWIRP_PATH="./rubygem/lib/wikipaddle_api"
 
 PATH="$PATH:$GO_BIN_PATH" protoc --proto_path=. \
   --ruby_out=${RUBY_TWIRP_PATH} \

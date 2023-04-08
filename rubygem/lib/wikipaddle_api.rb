@@ -3,7 +3,7 @@
 require "rack"
 
 require_relative "wikipaddle_api/version"
-require_relative "../rpc/wikipaddle_twirp"
+require_relative "wikipaddle_api/rpc/wikipaddle_twirp"
 
 module WikipaddleApi
   class Error < StandardError; end
