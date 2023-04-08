@@ -19,4 +19,5 @@ plugins:
 
   - plugin: protoc-gen-twirp_ts
     path: ./node_modules/.bin/protoc-gen-twirp_ts
+    opt: client_only
     out: npm

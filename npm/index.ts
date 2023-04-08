@@ -1,2 +1,2 @@
 export * from "./wikipaddle";
-export * from "./wikipaddle.twirp";
+export * from "./wikipaddle.twirp-client";

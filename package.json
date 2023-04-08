@@ -1,12 +1,11 @@
 {
-  "dependencies": {
-  },
+  "dependencies": {},
   "packageManager": "yarn@1.22.4",
   "devDependencies": {
-    "typescript": "^5.0.4",
     "@protobuf-ts/plugin": "^2.8.3",
     "google-protobuf": "^3.21.2",
     "protoc-gen-ts": "^0.8.6",
-    "twirp-ts": "^2.5.0"
+    "twirp-ts": "^2.5.0",
+    "typescript": "^5.0.4"
   }
 }
