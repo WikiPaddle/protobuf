@@ -4,6 +4,8 @@ managed:
   go_package_prefix:
     default: github.com/wikipaddle/protobuf/go-wikipaddle
 plugins:
+  - plugin: protoc-gen-twirp_ruby
+    out: gen/ruby
   - plugin: buf.build/protocolbuffers/ruby
     out: gen/ruby
   - plugin: buf.build/grpc/ruby
@@ -17,3 +19,4 @@ plugins:
   - plugin: buf.build/community/stephenh-ts-proto
     out: typescript
     opt: paths=source_relative
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+GO_BIN_PATH=$(go env GOPATH)/bin
+PATH="$PATH:$GO_BIN_PATH" buf generate proto
