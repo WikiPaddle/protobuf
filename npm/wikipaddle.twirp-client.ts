@@ -50,44 +50,31 @@ export class MobileClientJSON implements MobileClient {
     this.CreateGuideComment.bind(this);
   }
   GetUser(request: UserRequest): Promise<UserResponse> {
-    const data = UserRequest.toJson(request, {
-      useProtoFieldName: true,
-      emitDefaultValues: false,
-    });
+    const data = UserRequest.toJSON(request);
     const promise = this.rpc.request(
       "wikipaddle_api.v1.Mobile",
       "GetUser",
       "application/json",
       data as object
     );
-    return promise.then((data) =>
-      UserResponse.fromJson(data as any, { ignoreUnknownFields: true })
-    );
+    return promise.then((data) => UserResponse.fromJSON(data as any));
   }
 
   GetGuide(request: GuideRequest): Promise<GuideResponse> {
-    const data = GuideRequest.toJson(request, {
-      useProtoFieldName: true,
-      emitDefaultValues: false,
-    });
+    const data = GuideRequest.toJSON(request);
     const promise = this.rpc.request(
       "wikipaddle_api.v1.Mobile",
       "GetGuide",
       "application/json",
       data as object
     );
-    return promise.then((data) =>
-      GuideResponse.fromJson(data as any, { ignoreUnknownFields: true })
-    );
+    return promise.then((data) => GuideResponse.fromJSON(data as any));
   }
 
   GetGuidesCollection(
     request: GetGuidesCollectionRequest
   ): Promise<GetGuidesCollectionResponse> {
-    const data = GetGuidesCollectionRequest.toJson(request, {
-      useProtoFieldName: true,
-      emitDefaultValues: false,
-    });
+    const data = GetGuidesCollectionRequest.toJSON(request);
     const promise = this.rpc.request(
       "wikipaddle_api.v1.Mobile",
       "GetGuidesCollection",
@@ -95,35 +82,25 @@ export class MobileClientJSON implements MobileClient {
       data as object
     );
     return promise.then((data) =>
-      GetGuidesCollectionResponse.fromJson(data as any, {
-        ignoreUnknownFields: true,
-      })
+      GetGuidesCollectionResponse.fromJSON(data as any)
     );
   }
 
   GetCurrentUser(request: GetCurrentUserRequest): Promise<UserResponse> {
-    const data = GetCurrentUserRequest.toJson(request, {
-      useProtoFieldName: true,
-      emitDefaultValues: false,
-    });
+    const data = GetCurrentUserRequest.toJSON(request);
     const promise = this.rpc.request(
       "wikipaddle_api.v1.Mobile",
       "GetCurrentUser",
       "application/json",
       data as object
     );
-    return promise.then((data) =>
-      UserResponse.fromJson(data as any, { ignoreUnknownFields: true })
-    );
+    return promise.then((data) => UserResponse.fromJSON(data as any));
   }
 
   GetGuideCommentsCollection(
     request: GetGuideCommentsCollectionRequest
   ): Promise<GetGuideCommentsCollectionResponse> {
-    const data = GetGuideCommentsCollectionRequest.toJson(request, {
-      useProtoFieldName: true,
-      emitDefaultValues: false,
-    });
+    const data = GetGuideCommentsCollectionRequest.toJSON(request);
     const promise = this.rpc.request(
       "wikipaddle_api.v1.Mobile",
       "GetGuideCommentsCollection",
@@ -131,28 +108,21 @@ export class MobileClientJSON implements MobileClient {
       data as object
     );
     return promise.then((data) =>
-      GetGuideCommentsCollectionResponse.fromJson(data as any, {
-        ignoreUnknownFields: true,
-      })
+      GetGuideCommentsCollectionResponse.fromJSON(data as any)
     );
   }
 
   CreateGuideComment(
     request: CreateGuideCommentRequest
   ): Promise<GuideComment> {
-    const data = CreateGuideCommentRequest.toJson(request, {
-      useProtoFieldName: true,
-      emitDefaultValues: false,
-    });
+    const data = CreateGuideCommentRequest.toJSON(request);
     const promise = this.rpc.request(
       "wikipaddle_api.v1.Mobile",
       "CreateGuideComment",
       "application/json",
       data as object
     );
-    return promise.then((data) =>
-      GuideComment.fromJson(data as any, { ignoreUnknownFields: true })
-    );
+    return promise.then((data) => GuideComment.fromJSON(data as any));
   }
 }
 
@@ -168,31 +138,31 @@ export class MobileClientProtobuf implements MobileClient {
     this.CreateGuideComment.bind(this);
   }
   GetUser(request: UserRequest): Promise<UserResponse> {
-    const data = UserRequest.toBinary(request);
+    const data = UserRequest.encode(request).finish();
     const promise = this.rpc.request(
       "wikipaddle_api.v1.Mobile",
       "GetUser",
       "application/protobuf",
       data
     );
-    return promise.then((data) => UserResponse.fromBinary(data as Uint8Array));
+    return promise.then((data) => UserResponse.decode(data as Uint8Array));
   }
 
   GetGuide(request: GuideRequest): Promise<GuideResponse> {
-    const data = GuideRequest.toBinary(request);
+    const data = GuideRequest.encode(request).finish();
     const promise = this.rpc.request(
       "wikipaddle_api.v1.Mobile",
       "GetGuide",
       "application/protobuf",
       data
     );
-    return promise.then((data) => GuideResponse.fromBinary(data as Uint8Array));
+    return promise.then((data) => GuideResponse.decode(data as Uint8Array));
   }
 
   GetGuidesCollection(
     request: GetGuidesCollectionRequest
   ): Promise<GetGuidesCollectionResponse> {
-    const data = GetGuidesCollectionRequest.toBinary(request);
+    const data = GetGuidesCollectionRequest.encode(request).finish();
     const promise = this.rpc.request(
       "wikipaddle_api.v1.Mobile",
       "GetGuidesCollection",
@@ -200,25 +170,25 @@ export class MobileClientProtobuf implements MobileClient {
       data
     );
     return promise.then((data) =>
-      GetGuidesCollectionResponse.fromBinary(data as Uint8Array)
+      GetGuidesCollectionResponse.decode(data as Uint8Array)
     );
   }
 
   GetCurrentUser(request: GetCurrentUserRequest): Promise<UserResponse> {
-    const data = GetCurrentUserRequest.toBinary(request);
+    const data = GetCurrentUserRequest.encode(request).finish();
     const promise = this.rpc.request(
       "wikipaddle_api.v1.Mobile",
       "GetCurrentUser",
       "application/protobuf",
       data
     );
-    return promise.then((data) => UserResponse.fromBinary(data as Uint8Array));
+    return promise.then((data) => UserResponse.decode(data as Uint8Array));
   }
 
   GetGuideCommentsCollection(
     request: GetGuideCommentsCollectionRequest
   ): Promise<GetGuideCommentsCollectionResponse> {
-    const data = GetGuideCommentsCollectionRequest.toBinary(request);
+    const data = GetGuideCommentsCollectionRequest.encode(request).finish();
     const promise = this.rpc.request(
       "wikipaddle_api.v1.Mobile",
       "GetGuideCommentsCollection",
@@ -226,20 +196,20 @@ export class MobileClientProtobuf implements MobileClient {
       data
     );
     return promise.then((data) =>
-      GetGuideCommentsCollectionResponse.fromBinary(data as Uint8Array)
+      GetGuideCommentsCollectionResponse.decode(data as Uint8Array)
     );
   }
 
   CreateGuideComment(
     request: CreateGuideCommentRequest
   ): Promise<GuideComment> {
-    const data = CreateGuideCommentRequest.toBinary(request);
+    const data = CreateGuideCommentRequest.encode(request).finish();
     const promise = this.rpc.request(
       "wikipaddle_api.v1.Mobile",
       "CreateGuideComment",
       "application/protobuf",
       data
     );
-    return promise.then((data) => GuideComment.fromBinary(data as Uint8Array));
+    return promise.then((data) => GuideComment.decode(data as Uint8Array));
   }
 }
