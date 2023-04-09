@@ -1,0 +1,19 @@
+name: NPM version check
+
+on:
+  pull_request:
+    paths:
+      - "npm/**"
+      - ".github/workflows/npm_version_check.yml"
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-ruby@v1
+      - run: script/check_npm_version

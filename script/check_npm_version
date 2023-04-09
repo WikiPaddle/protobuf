@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require "json"
+require "uri"
+require "net/http"
+
+repo_version = JSON.load(File.read("npm/package.json"))["version"]
+
+uri = URI("https://registry.npmjs.org/@wikipaddle/api/#{repo_version}")
+response = Net::HTTP.get_response(uri)
+
+if response.is_a?(Net::HTTPSuccess)
+  puts "Version #{repo_version} is already published"
+  exit 1
+end
