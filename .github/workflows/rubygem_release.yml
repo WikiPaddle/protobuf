@@ -16,6 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-ruby@v1
+        working-directory: ./rubygem
       - run: rake release
         working-directory: ./rubygem
         env:
