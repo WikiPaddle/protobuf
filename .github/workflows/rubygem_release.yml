@@ -13,15 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-    defaults:
-      run:
-        working-directory: ./rubygem
     steps:
       - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0'
           bundler-cache: true
+          working-directory: ./rubygem
       - run: rake release
+        working-directory: ./rubygem
         env:
           RUBYGEMS_API_KEY: ${{ secrets.GEM_HOST_API_KEY }}
