@@ -14,11 +14,11 @@ jobs:
     permissions:
       contents: read
     steps:
+      - uses: actions/checkout@v3
       - shell: bash
         run: |
           git config user.name "WikiPaddle Bot"
           git config user.email "opensource@wikipaddle.com"
-      - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0'
