@@ -1,0 +1,14 @@
+require 'uri'
+require 'net/http'
+
+require_relative '../rubygem/lib/wikipaddle_api/version'
+
+repo_version = WikipaddleApi::VERSION
+
+uri = URI("https://rubygems.org/gems/wikipaddle_api/versions/#{repo_version}")
+response = Net::HTTP.get_response(uri)
+
+if response.is_a?(Net::HTTPSuccess)
+  puts "Version #{repo_version} is already published"
+  exit 1
+end

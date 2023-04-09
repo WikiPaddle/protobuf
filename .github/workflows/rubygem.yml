@@ -1,0 +1,19 @@
+name: RubyGem
+
+on:
+  pull_request:
+    paths:
+      - "rubygem/**"
+      - ".github/workflows/rubygem.yml"
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-ruby@v3
+      - run: script/check_rubygem_version.rb
