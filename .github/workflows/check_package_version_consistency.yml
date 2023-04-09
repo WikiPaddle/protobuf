@@ -1,0 +1,20 @@
+name: Check package version consistency
+
+on:
+  pull_request:
+    paths:
+      - "npm/**"
+      - "rubygem/**"
+      - ".github/workflows/check_package_version_consistency.yml"
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-ruby@v1
+      - run: script/check_package_version_consistency
