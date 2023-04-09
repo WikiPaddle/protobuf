@@ -1,8 +1,6 @@
 #!/usr/bin/env ruby
 
 require "json"
-require "uri"
-require "net/http"
 
 require_relative "../rubygem/lib/wikipaddle_api/version"
 rubygem_version = WikipaddleApi::VERSION
