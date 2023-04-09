@@ -20,7 +20,7 @@ jobs:
           ruby-version: '3.0'
           bundler-cache: true
           working-directory: ./rubygem
-      - run: rake release
+      - run: bundle exec rake release
         working-directory: ./rubygem
         env:
           RUBYGEMS_API_KEY: ${{ secrets.GEM_HOST_API_KEY }}
