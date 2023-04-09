@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - "npm/**"
-      - ".github/workflows/npm.yml"
+      - ".github/workflows/npm_release.yml"
     branches:
       - main
 
@@ -15,12 +15,10 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v3
-
       - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
-
       - run: npm publish --access public
         working-directory: ./npm
         env:
