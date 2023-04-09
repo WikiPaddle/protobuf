@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require "json"
+require "uri"
+require "net/http"
+
+require_relative "../rubygem/lib/wikipaddle_api/version"
+rubygem_version = WikipaddleApi::VERSION
+
+npm_version = JSON.load(File.read("npm/package.json"))["version"]
+
+unless rubygem_version == npm_version
+  puts "Package versions are not consistent: #{rubygem_version} != #{npm_version}"
+  exit 1
+end
