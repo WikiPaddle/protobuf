@@ -1,7 +1,9 @@
-require 'uri'
-require 'net/http'
+#!/usr/bin/env ruby
 
-require_relative '../rubygem/lib/wikipaddle_api/version'
+require "uri"
+require "net/http"
+
+require_relative "../rubygem/lib/wikipaddle_api/version"
 
 repo_version = WikipaddleApi::VERSION
 

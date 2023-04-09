@@ -16,4 +16,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-ruby@v1
-      - run: script/check_rubygem_version.rb
+      - run: script/check_rubygem_version
