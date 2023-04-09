@@ -4,7 +4,7 @@ on:
   pull_request:
     paths:
       - "rubygem/**"
-      - ".github/workflows/rubygem.yml"
+      - ".github/workflows/rubygem_version_check.yml"
     branches:
       - main
 
