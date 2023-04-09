@@ -1,0 +1,21 @@
+name: RubyGem release
+
+on:
+  push:
+    paths:
+      - "rubygem/**"
+      - ".github/workflows/rubygem_release.yml"
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-ruby@v1
+      - run: rake release
+        env:
+          RUBYGEMS_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
