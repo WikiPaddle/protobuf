@@ -1,0 +1,19 @@
+name: RubyGem version check
+
+on:
+  pull_request:
+    paths:
+      - "rubygem/**"
+      - ".github/workflows/rubygem_version_check.yml"
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-ruby@v1
+      - run: script/check_rubygem_version
