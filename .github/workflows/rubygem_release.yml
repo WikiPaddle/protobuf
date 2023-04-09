@@ -19,6 +19,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
       - run: rake release
         env:
           RUBYGEMS_API_KEY: ${{ secrets.GEM_HOST_API_KEY }}
