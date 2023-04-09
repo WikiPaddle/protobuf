@@ -1,5 +1,9 @@
 # WikiPaddle Protobuf
 
+[![rubygem](https://img.shields.io/gem/v/wikipaddle_api?style=for-the-badge)](https://rubygems.org/gems/wikipaddle_api)
+[![npm](https://img.shields.io/npm/v/@wikipaddle/api?style=for-the-badge)](https://www.npmjs.com/package/@wikipaddle/api)
+[![GPL-3.0](https://img.shields.io/github/license/WikiPaddle/protobuf?style=for-the-badge)](LICENSE)
+
 ## License
 
 Copyright (C) 2023 George Drummond.
