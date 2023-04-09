@@ -1,4 +1,4 @@
-name: RubyGem
+name: RubyGem version check
 
 on:
   pull_request:
