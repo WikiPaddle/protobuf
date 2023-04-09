@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - "npm/**"
-      - ".github/workflows/npm.yml"
+      - ".github/workflows/npm_release.yml"
     branches:
       - main
 
