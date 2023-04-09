@@ -18,4 +18,4 @@ jobs:
       - uses: actions/setup-ruby@v1
       - run: rake release
         env:
-          RUBYGEMS_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
+          RUBYGEMS_API_KEY: ${{ secrets.GEM_HOST_API_KEY }}
